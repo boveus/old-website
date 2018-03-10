@@ -6,6 +6,7 @@ class Headerbuttons extends Component {
     super(props)
     this.state = {
     }
+    this.show('home')
   }
 
   removeFromArray (value, arr) {
@@ -31,10 +32,11 @@ class Headerbuttons extends Component {
     }
   }
 
+
   render () {
     return (
       <div className='headerButtons'>
-        <Button className='topButton' bsSize='large' onClick={() => this.show('home')}> Home </Button>
+        <Button className='topButton' bsSize='large' onClick={() => this.show('home')} > Home </Button>
         <Button className='topButton' bsSize='large' onClick={() => this.show('about')}> About </Button>
         <Button className='topButton' bsSize='large' onClick={() => this.show('blog')}> Blog </Button>
         <Button className='topButton' bsSize='large' onClick={() => this.show('projects')}> Projects </Button>
