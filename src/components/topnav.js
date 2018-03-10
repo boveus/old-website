@@ -10,11 +10,10 @@ class Topnav extends Component {
   }
   render () {
     return (
+
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
-          <Navbar.Brand>
-            <a href='#brand'> My Website </a>
-          </Navbar.Brand>
+          <Navbar.Brand />
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>

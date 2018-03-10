@@ -9,11 +9,11 @@ class Buttontoolbar extends Component {
   }
   render () {
     return (
-      <div>
-        <Button bsSize='large'> Default </Button>
-        <Button bsSize='large'> Home </Button>
-        <Button bsSize='large'> About </Button>
-        <Button bsSize='large'> Blog </Button>
+      <div className='headerButtons'>
+        <Button className='topButton' bsSize='large'> Default </Button>
+        <Button className='topButton' bsSize='large'> Home </Button>
+        <Button className='topButton' bsSize='large'> About </Button>
+        <Button className='topButton' bsSize='large'> Blog </Button>
       </div>
     )
   }
