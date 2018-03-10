@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar } from 'react-bootstrap'
-import Buttontoolbar from './buttontoolbar'
+import Headerbuttons from './headerbuttons'
 
 class Topnav extends Component {
   constructor (props) {
@@ -10,16 +10,17 @@ class Topnav extends Component {
   }
   render () {
     return (
-
-      <Navbar inverse collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand />
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Buttontoolbar />
-        </Navbar.Collapse>
-      </Navbar>
+      <nav>
+        <Navbar inverse collapseOnSelect>
+          <Navbar.Header>
+            <Navbar.Brand />
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Headerbuttons />
+          </Navbar.Collapse>
+        </Navbar>
+      </nav>
     )
   }
 }
