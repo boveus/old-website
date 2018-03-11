@@ -32,7 +32,6 @@ class Headerbuttons extends Component {
     }
   }
 
-
   render () {
     return (
       <div className='headerButtons'>

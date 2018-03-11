@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './App.css'
-import Topnav from './components/topnav'
+import Header from './components/header'
 import Footer from './components/footer'
 
 class App extends Component {
   render () {
     return (
       <div>
-        <Topnav />
+        <Header />
         <Footer />
       </div>
     )
