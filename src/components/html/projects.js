@@ -17,6 +17,7 @@ class Projects extends Component {
           <img width={900} height={500} alt='500x500' src='image/water1.jpeg' />
           <Carousel.Caption>
             <h3>First slide label</h3>
+            <Button className='fa fa-github' href='https://github.com/boveus' />
             <p> Lorem ipsum blah blah basic overview </p>
             <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
             <Projectmodal show={this.state.lgShow} onHide={lgClose} />
