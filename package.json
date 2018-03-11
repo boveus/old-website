@@ -2,7 +2,7 @@
   "name": "boveus.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "www.brandonsstewart.com",
+  "homepage": "www.boveus.github.io",
   "dependencies": {
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
@@ -14,8 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "master -d build"
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0"
