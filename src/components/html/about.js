@@ -8,7 +8,7 @@ class About extends Component {
         <article>
           <h1>About me</h1>
           <p>
-            My name is Brandon Stewart.  I am an aspiring software developer, cyclist, and beer snob.  This is a website for posting blog posts about various things, technological or otherwise.
+            My name is Brandon Stewart.  I am a software developer, cyclist, general outdoors person and beer snob.  This is a website for posting blog posts about various things, technological or otherwise.
           </p>
           <h4>Vail Pass</h4>
           <Image src='image/bike_pic.jpg' responsive rounded className='bike-pic' />;
