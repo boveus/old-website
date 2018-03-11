@@ -10,7 +10,7 @@ class Projectmodal extends Component {
         aria-labelledby='contained-modal-title-lg'
       >
         <Modal.Header closeButton>
-          <Modal.Title id='contained-modal-title-lg'>Project 1</Modal.Title>
+          <Modal.Title id='contained-modal-title-lg'> `${this.props.title}` </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <h4>Wrapped Text</h4>

@@ -20,21 +20,27 @@ class Projects extends Component {
             <Button className='fa fa-github' href='https://github.com/boveus' />
             <p> Lorem ipsum blah blah basic overview </p>
             <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
-            <Projectmodal show={this.state.lgShow} onHide={lgClose} />
+            <Projectmodal show={this.state.lgShow} onHide={lgClose} title={'Artbot'} />
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img width={900} height={500} alt='500x500' src='image/water2.jpeg' />
           <Carousel.Caption>
             <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Button className='fa fa-github' href='https://github.com/boveus' />
+            <p> Lorem ipsum blah blah basic overview </p>
+            <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
+            <Projectmodal show={this.state.lgShow} onHide={lgClose} title={'Project2'} />
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img width={900} height={500} alt='500x500' src='image/water3.jpeg' />
           <Carousel.Caption>
             <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <Button className='fa fa-github' href='https://github.com/boveus' />
+            <p> Lorem ipsum blah blah basic overview </p>
+            <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
+            <Projectmodal show={this.state.lgShow} onHide={lgClose} title={'Project3'} />
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
