@@ -108,7 +108,7 @@ a:hover,a:focus{
 
 .bike-pic {
   height: 400px;
-  width: 500px; 
+  width: 500px;
 }
 
 /* Footer styling */
@@ -122,10 +122,17 @@ a:hover,a:focus{
 
 footer {
   position: absolute;
-  bottom: 5%;
+  padding-top: 1%;
+  bottom: 1%;
   left: 45%;
 }
 
 .footerbuttons {
   font-size: 32px;
+}
+
+/* Modal Styling */
+
+.modaldesc {
+  background: rgba(0, 0, 0, 0.5);
 }

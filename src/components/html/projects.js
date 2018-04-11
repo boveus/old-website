@@ -1,46 +1,41 @@
 import React, { Component } from 'react'
 import { Carousel, Button } from 'react-bootstrap'
-import Projectmodal from './projects/projectmodal'
+import Artbotmodal from './projects/artbotmodal'
 
 class Projects extends Component {
   constructor (props, context) {
     super(props, context)
     this.state = {
-      lgShow: false
+      abShow: false
     }
   }
   render () {
-    let lgClose = () => this.setState({ lgShow: false })
+    let abClose = () => this.setState({ lgShow: false })
     return (
       <Carousel interval={4000}>
         <Carousel.Item>
-          <img width={900} height={500} alt='500x500' src='image/water1.jpeg' />
+          <img alt='artbot website' src='https://user-images.githubusercontent.com/20469703/34654700-b97546aa-f3bc-11e7-8c91-cecc6a71115c.png' />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <Button className='fa fa-github' href='https://github.com/boveus' />
-            <p> Lorem ipsum blah blah basic overview </p>
+            <h3> Artbot </h3>
+            <Button className='fa fa-github' href='https://github.com/boveus/artbot' />
+            <p><span className='modaldesc'> A project built in React where you can generate random SVG graphics that are either static or animated. </span> </p>
+            <Button bsStyle='primary' href='http://brandonsstewart.com/artbot/' target='_blank'> Production Link </Button>
+            <br />
+            <br />
             <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
-            <Projectmodal show={this.state.lgShow} onHide={lgClose} title={'Artbot'} />
+            <Artbotmodal show={this.state.lgShow} onHide={abClose} title={'Artbot'} />
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={500} alt='500x500' src='image/water2.jpeg' />
+          <img alt='aliens website' src='https://user-images.githubusercontent.com/20469703/38647359-db57c242-3db9-11e8-8f37-88410aff5538.png' />
           <Carousel.Caption>
             <h3>Second slide label</h3>
-            <Button className='fa fa-github' href='https://github.com/boveus' />
-            <p> Lorem ipsum blah blah basic overview </p>
+            <Button className='fa fa-github' href='https://github.com/boveus/aliens' />
+            <p> <span className='modaldesc'> This is a rails project to use a CSV containing UFO sightings to do some analysis using active record. It may expand to use other datasets to form correlations in the future. The dataset I analyzed comes from Kaggle: www.kaggle.com/NUFORC/ufo-sightings. </span> </p>
+            <Button bsStyle='primary' href='https://ufosightings.herokuapp.com/' target='_blank'> Production Link </Button>
+            <br />
+            <br />
             <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
-            <Projectmodal show={this.state.lgShow} onHide={lgClose} title={'Project2'} />
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img width={900} height={500} alt='500x500' src='image/water3.jpeg' />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <Button className='fa fa-github' href='https://github.com/boveus' />
-            <p> Lorem ipsum blah blah basic overview </p>
-            <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}> Project Description </Button>
-            <Projectmodal show={this.state.lgShow} onHide={lgClose} title={'Project3'} />
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

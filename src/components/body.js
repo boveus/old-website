@@ -9,7 +9,6 @@ class Body extends Component {
   }
   render () {
     return (
-
       <body />
     )
   }
