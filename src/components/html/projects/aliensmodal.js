@@ -10,10 +10,10 @@ class Aliensmodal extends Component {
         aria-labelledby='contained-modal-title-lg'
       >
         <Modal.Header closeButton>
-          <Modal.Title id='contained-modal-title-lg'> Artbot </Modal.Title>
+          <Modal.Title id='contained-modal-title-lg'> Aliens Analysis </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Artbot</h4>
+          <h4> Aliens Analysis </h4>
           <p>
             So ideally
           </p>

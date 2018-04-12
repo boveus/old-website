@@ -7,8 +7,16 @@ class App extends Component {
   render () {
     return (
       <div>
-        <Header />
-        <Footer />
+        <div className='row'>
+          <Header />
+        </div>
+        <div className='row row-centered'>
+          <div className='col-md-4' />
+          <div className='col-md-4'>
+            <Footer />
+          </div>
+          <div className='col-md-4' />
+        </div>
       </div>
     )
   }

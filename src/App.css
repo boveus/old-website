@@ -113,21 +113,19 @@ a:hover,a:focus{
 
 /* Footer styling */
 .headshot {
+  margin-left: 46%;
   width: 50px;
   height: 50px;
-  postion: absolute;
-  margin-left: 33%;
-  margin-bottom: 5%;
 }
 
 footer {
-  position: absolute;
-  padding-top: 1%;
+  padding-top: 5%;
   bottom: 1%;
-  left: 45%;
+  justify-content: center;
 }
 
 .footerbuttons {
+  left: 35%;
   font-size: 32px;
 }
 
@@ -136,3 +134,5 @@ footer {
 .modaldesc {
   background: rgba(0, 0, 0, 0.5);
 }
+
+/* Carousel Styling */

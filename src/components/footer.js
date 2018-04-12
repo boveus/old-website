@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, ButtonGroup, Image } from 'react-bootstrap'
+import { Button, ButtonGroup } from 'react-bootstrap'
 
 class Footer extends Component {
   constructor (props) {
@@ -10,7 +10,6 @@ class Footer extends Component {
   render () {
     return (
       <footer>
-        <Image className='headshot' src='image/photo.png' responsive rounded />
         <ButtonGroup className='footerbuttons'>
           <Button className='fa fa-github' href='https://github.com/boveus' />
           <Button className='fa fa-linkedin' href='https://www.linkedin.com/in/brandon-scott-stewart/' />

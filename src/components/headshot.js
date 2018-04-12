@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import { Image } from 'react-bootstrap'
 
-class Body extends Component {
+class Headshot extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -9,13 +10,9 @@ class Body extends Component {
   }
   render () {
     return (
-      <div className='row'>
-        <div className='col-md-12'>
-          <body />
-        </div>
-      </div>
+      <Image className='headshot' src='image/photo.png' rounded />
     )
   }
 }
 
-export default Body
+export default Headshot
