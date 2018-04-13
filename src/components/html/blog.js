@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import Post from './blog/post'
 
 class Blog extends Component {
   render () {
     return (
-      <article>
-        <p> Coming soon... </p>
-      </article>
+      <Post title='This is a test' body='post body' />
     )
   }
 }
