@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Post from './blog/post'
-import { PostOne, PostTwo } from './blog/posts/posts'
-import ImageModal from './blog/imagemodal'
+import PostOne from './posts/postone'
+import PostTwo from './posts/posttwo'
 import { ToggleButton, ButtonToolbar, ToggleButtonGroup } from 'react-bootstrap'
 
 class Blog extends Component {
@@ -13,23 +12,34 @@ class Blog extends Component {
       body: 'Select a post title above to browse.'
     }
   }
+  hideAllPosts () {
+    let myClasses = document.getElementsByClassName('blogpost')
+    let i = 0
+    let l = myClasses.length
+
+    for (i; i < l; i++) {
+      myClasses[i].style.display = 'none'
+    }
+  }
   handleChange (e) {
     if (e === 1) {
-      this.setState({title: PostOne.title})
-      this.setState({body: PostOne.body})
+      this.setState({post: 1})
+      this.hideAllPosts()
+      document.getElementById('post1').style.display = 'block'
     } else if (e === 2) {
-      this.setState({title: PostTwo.title})
-      this.setState({body: PostTwo.body})
+      this.hideAllPosts()
+      document.getElementById('post2').style.display = 'block'
     }
   }
 
   render () {
     return (
       <div>
-        <ImageModal image='image/photo.png' btntxt='test' imgtitle='title test'/>
         <ButtonToolbar>
           <ToggleButtonGroup bsSize='small' type='radio' name='blogoptions' defaultValue={1} onChange={this.handleChange} >
-            <ToggleButton value={1} >Post 1 (pre-checked)</ToggleButton>
+            <ToggleButton value={1} >Post 1 </ToggleButton>
+            <br />
+            <br />
             <ToggleButton value={2} >Post 2</ToggleButton>
             <ToggleButton className='hidden' value={3}>Post 3</ToggleButton>
             <ToggleButton className='hidden' value={4}>Post 4</ToggleButton>
@@ -40,7 +50,8 @@ class Blog extends Component {
             <ToggleButton className='hidden' value={9}>Post 9</ToggleButton>
           </ToggleButtonGroup>
         </ButtonToolbar>
-        <Post title={this.state.title} body={this.state.body} />
+        <PostOne id='post1' />
+        <PostTwo id='post2' />
       </div>
     )
   }
