@@ -4,7 +4,7 @@ let PostOne = {
 }
 
 let PostTwo = {
-  title: 'A second Clever Title',
-  body: 'There will also be content here at some point..'
+  title: 'A second clever title',
+  body: 'post two body'
 }
 export { PostOne, PostTwo }

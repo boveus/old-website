@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Post from './blog/post'
-import { PostOne, PostTwo } from './blog/posts'
+import { PostOne, PostTwo } from './blog/posts/posts'
+import ImageModal from './blog/imagemodal'
 import { ToggleButton, ButtonToolbar, ToggleButtonGroup } from 'react-bootstrap'
 
 class Blog extends Component {
@@ -14,7 +15,6 @@ class Blog extends Component {
   }
   handleChange (e) {
     if (e === 1) {
-      // this.setPost(PostOne)
       this.setState({title: PostOne.title})
       this.setState({body: PostOne.body})
     } else if (e === 2) {
@@ -26,6 +26,7 @@ class Blog extends Component {
   render () {
     return (
       <div>
+        <ImageModal image='image/photo.png' btntxt='test' imgtitle='title test'/>
         <ButtonToolbar>
           <ToggleButtonGroup bsSize='small' type='radio' name='blogoptions' defaultValue={1} onChange={this.handleChange} >
             <ToggleButton value={1} >Post 1 (pre-checked)</ToggleButton>
