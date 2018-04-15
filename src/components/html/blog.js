@@ -6,9 +6,10 @@ import { ToggleButton, ButtonToolbar, ToggleButtonGroup } from 'react-bootstrap'
 class Blog extends Component {
   constructor (props) {
     super(props)
+    this.handleChange = this.handleChange.bind(this)
     this.state = {
-      title: 'initial title',
-      body: 'initial body'
+      title: 'Welcome to my blog',
+      body: 'Select a post title above to browse.'
     }
   }
   handleChange (e) {
@@ -16,17 +17,12 @@ class Blog extends Component {
       // this.setPost(PostOne)
       this.setState({title: PostOne.title})
       this.setState({body: PostOne.body})
-      console.log(this.parent)
     } else if (e === 2) {
       this.setState({title: PostTwo.title})
       this.setState({body: PostTwo.body})
-      console.log(this.parent)
     }
   }
-  setPost (post) {
-    this.setState({title: post.title})
-    this.setState({body: post.body})
-  }
+
   render () {
     return (
       <div>

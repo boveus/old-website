@@ -13,10 +13,10 @@ class Post extends Component {
     return (
       <div className='blog-post'>
         <PageHeader >
-          <p dangerouslySetInnerHTML={{ __html: this.state.title }} />
+          <p dangerouslySetInnerHTML={{ __html: this.props.title }} />
         </PageHeader>
         <Well bsSize='large'>
-          <p dangerouslySetInnerHTML={{ __html: this.state.body }} />
+          <p dangerouslySetInnerHTML={{ __html: this.props.body }} />
         </Well>
       </div>
     )

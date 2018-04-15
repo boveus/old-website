@@ -1,10 +1,10 @@
 let PostOne = {
-  title: 'post one title',
-  body: 'post one body'
+  title: 'Clever Title',
+  body: 'Someday there will be content here...'
 }
 
 let PostTwo = {
-  title: 'post two title',
-  body: 'post two body'
+  title: 'A second Clever Title',
+  body: 'There will also be content here at some point..'
 }
 export { PostOne, PostTwo }
