@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { PageHeader, Well } from 'react-bootstrap'
-import ImageModal from '../blog/imagemodal'
+import CodeModal from '../blog/codemodal'
 
 class PostOne extends Component {
   render () {
@@ -11,7 +11,7 @@ class PostOne extends Component {
         </PageHeader>
         <Well bsSize='large'>
           <p> Some compelling content will be here soon... </p>
-          <ImageModal image='image/photo.png' btntxt='test' imgtitle='title test' />
+          <CodeModal codesrc='https://gist.github.com/boveus/be952dd26a11bddba340eca26cd3954b.js' btntxt='example' codetitle='title test' />
         </Well>
       </div>
     )
