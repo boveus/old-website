@@ -144,3 +144,11 @@ footer {
 .hidden {
   display: none;
 }
+
+.blogpost {
+  display: none;
+}
+
+.btn-link {
+  text: 4em;
+}

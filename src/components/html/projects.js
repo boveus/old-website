@@ -15,7 +15,7 @@ class Projects extends Component {
     return (
       <Carousel className='bottompadding' interval={4000}>
         <Carousel.Item>
-          <img responsive alt='artbot website' src='https://user-images.githubusercontent.com/20469703/38652838-bb78ae66-3dd5-11e8-8249-3857afee0661.png' />
+          <img responsive='true' alt='artbot website' src='https://user-images.githubusercontent.com/20469703/38652838-bb78ae66-3dd5-11e8-8249-3857afee0661.png' />
           <Carousel.Caption>
             <h3> Artbot </h3>
             <Button className='fa fa-github' href='https://github.com/boveus/artbot' />
@@ -28,7 +28,7 @@ class Projects extends Component {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img responsive alt='aliens website' src='https://user-images.githubusercontent.com/20469703/38652855-d0dfcdac-3dd5-11e8-88dc-b4c6516a7ed4.png' />
+          <img responsive='true' alt='aliens website' src='https://user-images.githubusercontent.com/20469703/38652855-d0dfcdac-3dd5-11e8-88dc-b4c6516a7ed4.png' />
           <Carousel.Caption>
             <h3> UFO Sightings Analysis </h3>
             <Button className='fa fa-github' href='https://github.com/boveus/aliens' />
