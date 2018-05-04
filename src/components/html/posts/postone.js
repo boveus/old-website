@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { PageHeader, Well } from 'react-bootstrap'
 import CodeModal from '../blog/codemodal'
 
+const rbSnippet = 'class RubyCode\n  def ruby_method\n    puts \'this is a ruby method\'\n  end\nend'
+
 class PostOne extends Component {
   render () {
     return (
@@ -11,7 +13,7 @@ class PostOne extends Component {
         </PageHeader>
         <Well bsSize='large'>
           <p> Some compelling content will be here soon... </p>
-          <CodeModal codesrc='https://gist.github.com/boveus/be952dd26a11bddba340eca26cd3954b.js' btntxt='example' codetitle='title test' />
+          <CodeModal language='ruby' codesrc={rbSnippet} btntxt='Ruby Code Snippet' codetitle='ruby test' />
         </Well>
       </div>
     )

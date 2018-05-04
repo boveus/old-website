@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Modal, Button } from 'react-bootstrap'
+import Highlight from 'react-highlight'
 
 class CodeModal extends Component {
   constructor (props, context) {
@@ -12,7 +13,8 @@ class CodeModal extends Component {
       show: false,
       codesrc: this.props.codesrc,
       btntxt: this.props.btntxt,
-      codetitle: this.props.codetitle
+      codetitle: this.props.codetitle,
+      language: this.props.language
     }
   }
 
@@ -37,7 +39,9 @@ class CodeModal extends Component {
             </Modal.Header>
             <Modal.Body>
               <div>
-                <script src={this.props.codesrc} async defer />
+                <Highlight className={this.props.language}>
+                  {this.props.codesrc}
+                </Highlight>
               </div>
             </Modal.Body>
             <Modal.Footer>
