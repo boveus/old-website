@@ -26,7 +26,7 @@ class Blog extends Component {
       <div>
         <ButtonToolbar>
           <ToggleButtonGroup bsSize='large' type='radio' name='blogoptions' onChange={this.handleChange} >
-            <ToggleButton value={1} className='btn btn-link'> Rails Generators </ToggleButton>
+            <ToggleButton value={1} className='btn btn-link'> Using Structs in Ruby </ToggleButton>
             <ToggleButton value={2} className='btn btn-link'> Some other exciting content </ToggleButton>
             <ToggleButton className='hidden' value={3}>Post 3</ToggleButton>
             <ToggleButton className='hidden' value={4}>Post 4</ToggleButton>
